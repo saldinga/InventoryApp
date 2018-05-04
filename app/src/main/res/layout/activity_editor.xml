@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alignmentMode="alignBounds"
+    android:columnCount="2"
+    android:columnOrderPreserved="false"
+    android:elevation="0dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:useDefaultMargins="true"
+    tools:context=".EditorActivity">
+
+    <TextView
+        style="@style/infoText"
+        android:text="@string/book_title" />
+
+    <EditText
+        android:id="@+id/book_title_edittext"
+        android:layout_width="match_parent"
+        android:inputType="text" />
+
+    <TextView
+        style="@style/infoText"
+        android:text="@string/book_price" />
+
+    <EditText
+        android:id="@+id/book_price_edittext"
+        android:layout_width="match_parent"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/infoText"
+        android:text="@string/book_quantity" />
+
+    <EditText
+        android:id="@+id/quantity_edittext"
+        android:layout_width="match_parent"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/infoText"
+        android:text="@string/supplier_name" />
+
+    <EditText
+        android:id="@+id/supplier_name_edittext"
+        android:layout_width="match_parent"
+        android:inputType="text" />
+
+    <TextView
+        style="@style/infoText"
+        android:text="@string/supplier_tel_number" />
+
+    <EditText
+        android:id="@+id/supplier_tel_edittext"
+        android:layout_width="match_parent"
+        android:inputType="phone" />
+
+</GridLayout>
