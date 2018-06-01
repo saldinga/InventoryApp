@@ -12,8 +12,21 @@
         <item name="android:fontFamily">@font/noto_sans</item>
         <item name="android:textColor">@color/infoText</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">13sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="columnText">
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:textColor">@color/infoText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="itemText">
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 </resources>

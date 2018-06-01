@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/product_name"
+        style="@style/itemText"
+        android:layout_width="@dimen/name_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:paddingLeft="8dp"
+        tools:text="Product name" />
+
+    <TextView
+        android:id="@+id/product_price"
+        style="@style/itemText"
+        android:layout_width="@dimen/price_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="8dp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        style="@style/itemText"
+        android:layout_width="@dimen/quantity_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="8dp"
+        tools:text="12" />
+
+    <ImageButton
+        android:id="@+id/sale_button"
+        android:layout_width="@dimen/sale_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="25dp"
+        app:srcCompat="@drawable/ic_action_cart" />
+
+</LinearLayout>

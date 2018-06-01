@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Inventory App</string>
-    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="empty_list">Start adding items</string>
 
     <string name="book_title">Title</string>
     <string name="book_price">Price</string>
@@ -8,7 +9,55 @@
     <string name="supplier_name">Supplier name</string>
     <string name="supplier_tel_number">Supplier phone\nnumber</string>
 
-    <string name="editorActivity">Insert book</string>
+    <string name="action_insert">Insert book</string>
+    <string name="action_edit">Edit book</string>
 
     <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete_table">Delete All</string>
+
+    <string name="column_product_name">Product name</string>
+    <string name="column_quantity">Quant</string>
+    <string name="column_price">Price</string>
+    <string name="column_sale">Sale</string>
+
+    <string name="insert_message_success">Book saved successfully</string>
+    <string name="insert_message_fail">Book saving failed</string>
+    <string name="insert_uri_fail">Insertion is not supported for </string>
+
+    <string name="update_message_success">Book updated successfully</string>
+    <string name="update_message_fail">Book updating failed</string>
+    <string name="updated_not_supported">Update is not supported for </string>
+
+    <string name="name_fail">Book requires a name</string>
+    <string name="price_null_fail">Book requires a price</string>
+    <string name="price_negative_fail">Book price must be nonnegative</string>
+    <string name="quantity_null_fail">Book requires quantity</string>
+    <string name="quantity_negative_fail">Book quantity must be nonnegative</string>
+    <string name="supplier_name_fail">Book requires a supplier name</string>
+    <string name="sup_tel_fail">Book requires a supplier telephone number</string>
+
+    <string name="delete_fail">Deletion is not supported for </string>
+    <string name="delete_message_success">Book deleted successfully</string>
+    <string name="delete_message_fail">Book deleting failed</string>
+
+    <string name="delete_dialog_msg">Delete this book?</string>
+    <string name="table_delete_dialog_msg">Are you sure, you want to delete everything?</string>
+
+    <string name="table_delete_message_success">All entries deleted successfully</string>
+    <string name="table_delete_message_fail">All entries deleting failed</string>
+
+    <string name="out_of_stock">Out of stock</string>
+
+    <string name="hint_name">Enter product name</string>
+    <string name="hint_price">Enter non-negative price</string>
+    <string name="hint_supplier_name">Enter supplier name</string>
+    <string name="hint_supplier_tel">Supplier telephone number</string>
+
+    <string name="call_supplier">Call supplier</string>
+
+    <string name="unsaved_changes_dialog_msg">Changes have not been saved</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
 </resources>

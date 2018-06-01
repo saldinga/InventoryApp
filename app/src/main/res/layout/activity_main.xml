@@ -6,14 +6,83 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.inventoryapp.CatalogActivity">
 
-    <TextView
-        android:id="@+id/info_text"
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Testing" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/treasure2" />
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_image"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="@string/empty_list"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/columnText"
+            android:layout_width="@dimen/name_width"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/column_product_name" />
+
+        <TextView
+            style="@style/columnText"
+            android:layout_width="@dimen/price_width"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/column_price" />
+
+        <TextView
+            style="@style/columnText"
+            android:layout_width="@dimen/quantity_width"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/column_quantity" />
+
+        <TextView
+            style="@style/columnText"
+            android:layout_width="@dimen/sale_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/column_sale" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/inventory_list"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatButton"
